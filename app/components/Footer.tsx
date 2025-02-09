@@ -93,7 +93,7 @@ const Footer = () => {
         </motion.div>
 
         <div className="text-center font-source_code_pro font-semibold text-sm mt-12">
-          ©2023 ALBERT | ALL RIGHTS RESERVED
+          ©2025 VISHNUVARDHAN | ALL RIGHTS RESERVED
         </div>
       </div>
     </footer>
