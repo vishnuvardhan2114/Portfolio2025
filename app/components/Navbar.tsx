@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { motion } from "framer-motion"
-
+import Image from "next/image"
+import vishnu from  "@/public/Vishnu.svg"
 const navLinks = [
   { href: "/works", label: "WORKS" },
   { href: "/about", label: "ABOUT" },
@@ -28,7 +29,14 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="text-2xl font-semibold font-dancing_script">
-          Vishnu
+        <Image 
+            src={vishnu}
+            alt="logo"
+            width={130}
+            height={100}
+            priority
+            className="filter-black"
+          />
         </Link>
 
         <ul className="hidden md:flex items-center gap-12 bg-white rounded-full px-10 py-3">
