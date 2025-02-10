@@ -37,7 +37,7 @@ export default function Workstation() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-xl font-source_code_pro font-semibold max-w-xs"
+              className="sm:text-xl font-source_code_pro font-semibold max-w-xs"
             >
               World Visa | October 2024 – Present
             </motion.p>
@@ -48,7 +48,7 @@ export default function Workstation() {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-sm max-w-xs ml-auto font-source_code_pro font-semibold"
+              className="sm:text-sm text-[14px] sm:max-w-xs ml-auto font-source_code_pro font-semibold"
             >
               AS A FULL STACK DEVELOPER AT WORLD VISA, I DESIGNED, DEVELOPED,
               AND DEPLOYED GET A VISA, THE GREY WALL INTERIORS, AND WORLD VISA
@@ -78,10 +78,10 @@ export default function Workstation() {
                   alt="Workstation setup"
                   width={350}
                   height={300}
-                  className="rounded-lg"
+                  className="rounded-lg hidden sm:block"
                 />
               </div>
-              <h2 className="text-[180px] font-bold text-primary text-center font-roboto_condensed relative z-0">
+              <h2 className="sm:text-[180px] text-6xl sm:my-0 my-[14%] font-bold text-primary text-center font-roboto_condensed relative z-0">
                 EXPERIENCE
               </h2>
             </div>
@@ -89,10 +89,10 @@ export default function Workstation() {
 
           <div className="flex justify-center">
             <div className="">
-              <h3 className="text-xl  mb-4 font-source_code_pro font-bold">
+              <h3 className="sm:text-xl  mb-4 font-source_code_pro font-bold">
                 WHAT DO I DO?
               </h3>
-              <p className="text-sm max-w-xl font-source_code_pro font-semibold">
+              <p className="sm:text-sm text-xs max-w-xl font-source_code_pro font-semibold">
               <motion.ul 
                 className="grid grid-cols-2 gap-4"
                 initial="hidden"

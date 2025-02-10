@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 import ProjectImage1 from "@/public/works/Screenshot 2024-10-21 181717.png";
 import ProjectImage2 from "@/public/works/project2new.png";
 import ProjectImage3 from "@/public/works/project3.png";
-
-
 import { ArrowUpRight } from "lucide-react";
+import { WorksMobile } from "./WorksMobile";
 
 const itemVariants = {
   hidden: { y: 20, opacity: 0 },
@@ -23,9 +22,9 @@ const itemVariants = {
 
 export default function Works() {
   return (
-    <section className="py-20 min-h-screen bg-[#f8f9f5]">
+    <section className="py-20 min-h-screen bg-[#f8f9f5]" >
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="hidden md:grid lg:grid-cols-3 gap-12">
           {/* Left column with title */}
           <div>
             <motion.h2
@@ -162,13 +161,27 @@ export default function Works() {
           </div>
         </div>
 
+        <div className="md:hidden relative">
+          <motion.h2
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-5xl font-roboto_condensed font-bold text-primary mb-5"
+          >
+            WORKS
+            {/* project 1 */}
+          </motion.h2>
+          <WorksMobile />
+        </div>
+
         {/* View all button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className=" text-start"
+          className=" text-start sm:mt-0 mt-6"
         >
           <Link
             href="/works"

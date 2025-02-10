@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['pbs.twimg.com'], // Add this line to configure the hostname
+  },
 };
 
 export default nextConfig;
