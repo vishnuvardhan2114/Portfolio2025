@@ -24,9 +24,10 @@ export default function Hero() {
     >
       {/* Background circles */}
       <motion.div className="absolute inset-0 " style={{ y, opacity }}>
-        <div className="absolute sm:top-1/4 sm:right-1/4 sm:w-[400px] sm:h-[400px] w-[220px] h-[220px] rounded-full bg-primary/5" />
+        <div className="absolute sm:top-1/4 top-20 sm:right-1/4 sm:w-[400px] sm:h-[400px] w-[120px] h-[120px] rounded-full bg-primary/5" />
         <div className="absolute bottom-1/4 left-1/4 w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] rounded-full bg-primary/10" />
       </motion.div>
+    
 
       <div className="container mx-auto px-4 font-roboto_condensed">
         <motion.h2
@@ -45,7 +46,7 @@ export default function Hero() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8 }}
             style={{ y, opacity }}
-            className="absolute sm:left-[13%] -left-[25%] -bottom-[56%] sm:-bottom-[32%] transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[1000px] sm:h-[1000px] z-10"
+            className="absolute sm:left-[13%] -right-[94px] -bottom-[70%] sm:-bottom-[32%] transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[1000px] sm:h-[1000px] z-10"
           >
             <Image
               src={MyImage}
