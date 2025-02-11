@@ -22,25 +22,26 @@ const itemVariants = {
 
 export default function Works() {
   return (
-    <section className="py-20 min-h-screen bg-[#f8f9f5]" >
+    <section className="py-20 min-h-screen bg-[#f8f9f5] overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="hidden md:grid lg:grid-cols-3 gap-12">
           {/* Left column with title */}
           <div>
             <motion.h2
               initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6 }}
               className="text-9xl font-roboto_condensed font-bold text-primary"
             >
               WORKS
-              {/* project 1 */}
             </motion.h2>
             <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
               variants={itemVariants}
               whileHover={{ y: -6 }}
-              className="w-[320px] mt-[10%]"
+              className="w-[320px] mt-[10%] will-change-transform"
             >
               <Link href="" className="block">
                 <div className="relative w-[400px] mb-4 overflow-hidden shadow-lg">
@@ -75,9 +76,12 @@ export default function Works() {
           </div>
           <div>
             <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
               variants={itemVariants}
               whileHover={{ y: -6 }}
-              className=" mt-[15%]"
+              className="mt-[15%] will-change-transform"
             >
               <Link href="" className="block">
                 <div className="relative w-[450px] mb-4 overflow-hidden shadow-lg">
@@ -110,13 +114,10 @@ export default function Works() {
               </Link>
             </motion.div>
           </div>
-
-          {/* Right column with description */}
           <div className="lg:text-start font-source_code_pro font-semibold">
             <motion.p
               initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6 }}
               className="text-sm max-w-xs ml-auto"
             >
@@ -124,9 +125,12 @@ export default function Works() {
               OPPORTUNITY TO WORK ON A WIDE VARIETY OF PROJECTS.
             </motion.p>
             <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
               variants={itemVariants}
               whileHover={{ y: -6 }}
-              className="min-w-full mt-[10%] ml-12"
+              className="min-w-full mt-[10%] ml-12 will-change-transform"
             >
               <Link href="" className="block">
                 <div className="relative w-[420px] mb-4 overflow-hidden shadow-lg">
