@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <div
       ref={ref}
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative sm:min-h-screen min-h-[90vh] flex items-center overflow-hidden"
     >
       {/* Background circles */}
       <motion.div className="absolute inset-0 " style={{ y, opacity }}>
@@ -33,7 +33,7 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-14 font-roboto_condensed font-bold  text-2xl sm:text-4xl"
+          className="text-center flex  mb-14 font-roboto_condensed font-bold ml-2 sm:ml-0 text-2xl sm:text-4xl"
         >
           HI THERE, I&apos;M VISHNUVARDHAN
         </motion.h2>
@@ -45,7 +45,7 @@ export default function Hero() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8 }}
             style={{ y, opacity }}
-            className="absolute sm:left-[13%] -left-[22%] -bottom-[50%] sm:-bottom-[32%] transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[1000px] sm:h-[1000px] z-10"
+            className="absolute sm:left-[13%] -left-[25%] -bottom-[56%] sm:-bottom-[32%] transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[1000px] sm:h-[1000px] z-10"
           >
             <Image
               src={MyImage}
@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-4xl sm:text-8xl font-bold text-primary col-span-2 text-center mt-4 font-bebas_neue"
             >
-              <CodeXml size={isSmallDevice ? 80 : 160} />
+              <CodeXml size={isSmallDevice ? 60 : 160} />
             </motion.h1>
           </div>
 
@@ -96,7 +96,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="absolute font-source_code_pro font-semibold top-1/2 right-0 max-w-[140px] sm:max-w-[200px] text-sm sm:text-base" // Adjusted text size and max-width for responsiveness
+            className="absolute sm:block hidden font-source_code_pro font-semibold top-1/2 right-0 max-w-[140px] sm:max-w-[200px] text-sm sm:text-base" // Adjusted text size and max-width for responsiveness
           >
             I AM A CREATIVE FRONT-END DEVELOPER WITH A STRONG FOCUS ON MOTION
             AND INTERACTION.
