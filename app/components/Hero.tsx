@@ -33,7 +33,7 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-center flex  mb-14 font-roboto_condensed font-bold ml-2 sm:ml-0 text-2xl sm:text-4xl"
+          className="text-center flex  mb-14 font-roboto_condensed font-bold justify-center text-2xl sm:text-4xl"
         >
           HI THERE, I&apos;M VISHNUVARDHAN
         </motion.h2>
