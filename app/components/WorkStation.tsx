@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Work from "@/public/office.webp";
+import Work from "@/public/myOffice-img.webp";
 import { Milestone } from "lucide-react";
 import { useRef } from "react";
 
@@ -72,12 +72,12 @@ export default function Workstation() {
             className="relative flex items-center justify-center "
           >
             <div className="flex items-center relative">
-              <div className="absolute left-[-25%] top-[70%] z-10">
+              <div className="absolute left-[-25%] top-[70%] z-10 w-[350px]">
                 <Image
                   src={Work}
                   alt="Workstation setup"
-                  width={350}
-                  height={300}
+                  width={1000}
+                  height={1000}
                   className="rounded-lg hidden sm:block"
                 />
               </div>

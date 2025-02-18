@@ -20,11 +20,11 @@ export default function Contact() {
               <h2 className="text-5xl lg:text-8xl sm:my-0 my-10 font-bold font-roboto_condensed text-primary">
                 HAVE AN IDEA?
               </h2>
-              <p className="text-xs lg:text-sm max-w-[250px] font-semibold font-source_code_pro text-left mx-4 lg:mx-8">
+              <p className="text-xs lg:text-sm sm:max-w-[250px]  font-semibold font-source_code_pro text-left mx-6 lg:mx-8">
                 I UNDERSTAND THAT YOU MIGHT BE BUSY, BUT ANY ASSISTANCE YOU
                 COULD PROVIDE WOULD BE GREATLY APPRECIATED.
               </p>
-              <div className="mx-2 lg:mx-4 relative">
+              <div className="mx-2 sm:mt-0 mt-3 lg:mx-4 relative">
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 300 }}
