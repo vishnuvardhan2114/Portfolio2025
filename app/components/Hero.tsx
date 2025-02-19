@@ -27,9 +27,20 @@ export default function Hero() {
         <div className="absolute sm:top-1/4 top-20 sm:right-1/4 sm:w-[400px] sm:h-[400px] w-[120px] h-[120px] rounded-full bg-primary/5" />
         <div className="absolute bottom-1/4 left-1/4 w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] rounded-full bg-primary/10" />
       </motion.div>
-    
+
 
       <div className="container mx-auto px-4 font-roboto_condensed">
+        <div className="sm:hidden block">
+          <motion.div>
+            <Image
+              src={MyImage}
+              alt="Portrait"
+              fill
+              className="object-cover"
+              priority
+            />
+          </motion.div>
+        </div>
         <motion.h2
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -46,7 +57,7 @@ export default function Hero() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8 }}
             style={{ y, opacity }}
-            className="absolute sm:left-[13%] -right-[94px] -bottom-[70%] sm:-bottom-[32%] transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[1000px] sm:h-[1000px] z-10"
+            className="absolute sm:left-[13%] hidden sm:block sm:-bottom-[32%] transform -translate-x-1/2 -translate-y-1/2  sm:w-[500px] sm:h-[500px] lg:w-[800px] lg:h-[800px] xl:w-[1000px] xl:h-[1000px] z-10"
           >
             <Image
               src={MyImage}
@@ -70,7 +81,7 @@ export default function Hero() {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl sm:text-8xl font-extrabold text-primary sm:ml-[48%] ml-[14%] font-bebas_neue"
+              className="text-4xl sm:text-8xl font-extrabold text-primary sm:ml-[48%] flex justify-end font-bebas_neue"
             >
               STACK
             </motion.h1>
@@ -78,7 +89,7 @@ export default function Hero() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-4xl sm:text-8xl font-bold text-primary col-span-2 text-center sm:mt-4 font-bebas_neue"
+              className="text-4xl hidden sm:block sm:text-8xl font-bold text-primary col-span-2 text-center sm:mt-4 font-bebas_neue"
             >
               DEVELOPER
             </motion.h1>
